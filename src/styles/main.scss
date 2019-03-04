@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #edfff0;
+}
+
+body, div, input, h1, h2, h3 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// Common
+@import './common/reset';
+@import './common/variables';
+
+// Components
+@import "../components/spinner/spinner";
+@import "../components/auth/signup/signup";
+@import "../components/auth/signin/signin";
+@import "../containers/header/header";
+@import "../containers/profile/profile";
+@import "../components/weather/weather";
+@import "../components/currentLocation/currentLocation";
+
+
+
+
+
+
+
+
+
+
+
+
+
+

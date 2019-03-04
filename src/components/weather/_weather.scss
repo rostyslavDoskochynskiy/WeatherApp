@@ -1,0 +1,139 @@
+.weather {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 60px);
+
+  &__spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4da9581c;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  &__city {
+    color: green;
+  }
+
+  &__table {
+    width: 60vw;
+  }
+
+  &__table-td {
+    text-align: center;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__table-td:first-child {
+    margin: 0 7px;
+  }
+
+  &__table-td:nth-child(2) {
+    justify-content: flex-start;
+  }
+
+  &__table-tr {
+    border: 1px solid rgba(167, 207, 250, 0.7);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+  }
+
+  &__table-tr:last-of-type {
+    border-bottom: 1px solid rgba(167, 207, 250, 0.7);
+  }
+
+  & .date {
+    color: #A7CFFA;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  & &__img-wrapper {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  & .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-widget .description:before {
+    font-size: 1.4em;
+    left: 0;
+    position: absolute;
+  }
+
+  & .low-temp,
+  & .high-temp {
+    font-weight: 300;
+    font-size: 1.2em;
+    position: relative;
+  }
+
+  & .low-temp .low-temp-icon,
+  & .forecast .high-temp .high-temp-icon {
+    font-size: 60%;
+    margin-left: 3px;
+  }
+
+  & .low-temp:before,
+  & .high-temp:before {
+    font-size: 1.0em;
+    color: #A7CFFA;
+  }
+
+  & .high-temp:before {
+    content: "\2191";
+    color: #FD6565;
+  }
+
+  & .low-temp:before {
+    content: "\2193";
+    color: #23e0ae;
+  }
+
+  @media screen and (max-width: 400px){
+    &__title {
+      font-size: .9em;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden;
+  background-color: #edfff0; }
+
+body, div, input, h1, h2, h3 {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.ant-btn {
+  background-color: transparent; }
+
+.lds-spinner {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px; }
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.lds-spinner__items {
+  transform-origin: 32px 32px;
+  animation: lds-spinner 1.2s linear infinite; }
+  .lds-spinner__items:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 29px;
+    width: 5px;
+    height: 14px;
+    border-radius: 20%;
+    background: #4CAF50; }
+  .lds-spinner__items:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s; }
+  .lds-spinner__items:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s; }
+  .lds-spinner__items:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s; }
+  .lds-spinner__items:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s; }
+  .lds-spinner__items:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s; }
+  .lds-spinner__items:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s; }
+  .lds-spinner__items:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s; }
+  .lds-spinner__items:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s; }
+  .lds-spinner__items:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s; }
+  .lds-spinner__items:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s; }
+  .lds-spinner__items:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s; }
+  .lds-spinner__items:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s; }
+
+.signup {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 45px;
+  text-align: center;
+  width: 300px;
+  margin: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+  .signup__info {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .signup__title {
+    color: #4CAF50;
+    margin-bottom: 30px; }
+  .signup .ant-input-affix-wrapper {
+    margin-bottom: 10px; }
+  .signup .ant-btn {
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #4CAF50;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+  .signup .ant-btn:hover, .signup .ant-btn:active, .signup .ant-btn:focus {
+    background-color: #43A047 !important;
+    color: #fff; }
+  .signup__question, .signup__link {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px; }
+  .signup__link_btn {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 4px; }
+    .signup__link_btn:hover {
+      color: #4CAF50; }
+  .signup__modal .ant-btn:first-child {
+    display: none; }
+  .signup__modal .ant-btn {
+    width: inherit; }
+  .signup__modal .ant-modal-body {
+    width: inherit; }
+
+.signin {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  padding: 45px;
+  text-align: center;
+  width: 300px;
+  margin: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+  .signin__info {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .signin__title {
+    color: #4CAF50;
+    margin-bottom: 30px; }
+  .signin .ant-input-affix-wrapper {
+    margin-bottom: 15px; }
+  .signin .ant-btn {
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #4CAF50;
+    width: 100%;
+    height: 30px;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+  .signin .ant-btn:hover, .signin .ant-btn:active, .signin .ant-btn:focus {
+    background-color: #43A047;
+    color: #fff; }
+  .signin__question, .signin__link {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px; }
+  .signin__link_btn {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 4px; }
+    .signin__link_btn:hover {
+      color: #4CAF50; }
+
+.header {
+  height: 60px;
+  padding: 20px 60px 20px 100px;
+  background-color: #fff;
+  transition: 0.5s;
+  color: #fff;
+  box-shadow: 0 -1px 20px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%; }
+  .header__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 80px;
+    color: rgba(0, 0, 0, 0.65); }
+  .header__info:hover, .header__info:focus {
+    color: #000; }
+  .header__user-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    line-height: 18px; }
+  .header .ant-dropdown-link {
+    height: inherit;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; }
+  .header .ant-dropdown-link:before {
+    left: 0; }
+  .header .ant-dropdown-menu-item {
+    text-align: center; }
+  .header .ant-dropdown-link .header__drop {
+    color: #000; }
+  .header .ant-dropdown-menu-item:hover {
+    background-color: #43A047;
+    color: #fff !important; }
+  .header .ant-btn-primary,
+  .header .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled), .header .ant-input:hover,
+  .header .ant-input-affix-wrapper:active .ant-input:not(.ant-input-disabled), .header .ant-input:active,
+  .header .ant-input-affix-wrapper:focus .ant-input:not(.ant-input-disabled), .header .ant-input:focus {
+    border-color: #4CAF50; }
+  .header .ant-btn-primary {
+    color: #4CAF50; }
+  .header .ant-btn-primary:hover {
+    background-color: #4CAF50;
+    color: #fff; }
+  .header__img {
+    max-width: 50px;
+    height: 50px;
+    flex-grow: 1; }
+  .header .anticon-down {
+    font-size: 20px;
+    color: #fff; }
+  .header__drop > svg {
+    font-size: 18px; }
+  .header__cities {
+    position: relative;
+    width: inherit; }
+  .header__tips {
+    color: #0000009c;
+    position: absolute;
+    top: 46px;
+    width: 80%;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 0 0 9px 9px;
+    box-shadow: 22px 0 193px 3px rgba(0, 0, 0, 0.15);
+    max-height: 200px;
+    overflow-y: scroll; }
+  .header__tips-items {
+    cursor: pointer;
+    border-bottom: none;
+    border-top: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px; }
+  .header__tips-items:last-of-type {
+    margin-bottom: 20px; }
+  .header__tips-items:hover {
+    background-color: #4CAF50;
+    color: #fff; }
+  .header__action-wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: space-between; }
+  .header__action-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer; }
+
+.profile {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+  .profile__content {
+    margin-top: 60px;
+    height: calc(100% - 60px); }
+  .profile__container {
+    width: 100%;
+    background-color: #f0fff0; }
+
+.weather {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100% - 60px); }
+  .weather__spinner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4da9581c; }
+  .weather__title {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-bottom: 30px; }
+  .weather__city {
+    color: green; }
+  .weather__table {
+    width: 60vw; }
+  .weather__table-td {
+    text-align: center;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .weather__table-td:first-child {
+    margin: 0 7px; }
+  .weather__table-td:nth-child(2) {
+    justify-content: flex-start; }
+  .weather__table-tr {
+    border: 1px solid rgba(167, 207, 250, 0.7);
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px; }
+  .weather__table-tr:last-of-type {
+    border-bottom: 1px solid rgba(167, 207, 250, 0.7); }
+  .weather .date {
+    color: #A7CFFA;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .weather .weather__img-wrapper {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; }
+  .weather__icon {
+    width: 100%;
+    height: 100%; }
+  .weather .description {
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .weather-widget .description:before {
+    font-size: 1.4em;
+    left: 0;
+    position: absolute; }
+  .weather .low-temp,
+  .weather .high-temp {
+    font-weight: 300;
+    font-size: 1.2em;
+    position: relative; }
+  .weather .low-temp .low-temp-icon,
+  .weather .forecast .high-temp .high-temp-icon {
+    font-size: 60%;
+    margin-left: 3px; }
+  .weather .low-temp:before,
+  .weather .high-temp:before {
+    font-size: 1.0em;
+    color: #A7CFFA; }
+  .weather .high-temp:before {
+    content: "\2191";
+    color: #FD6565; }
+  .weather .low-temp:before {
+    content: "\2193";
+    color: #23e0ae; }
+  @media screen and (max-width: 400px) {
+    .weather__title {
+      font-size: .9em; } }
+
+.current-location {
+  margin-top: 120px; }
+  .current-location__title {
+    text-align: center; }
+  .current-location__data {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; }
+  .current-location__item {
+    font-size: 15px;
+    padding: 5px; }
+  .current-location__data-item {
+    color: #4CAF50; }
+  .current-location .weather {
+    margin-top: 80px; }
+  .current-location .weather__title {
+    margin-bottom: 15px; }
