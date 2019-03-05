@@ -58,9 +58,12 @@
   }
 
   & .ant-btn-primary,
-  & .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),  & .ant-input:hover,
-  & .ant-input-affix-wrapper:active .ant-input:not(.ant-input-disabled),  & .ant-input:active,
-  & .ant-input-affix-wrapper:focus .ant-input:not(.ant-input-disabled),  & .ant-input:focus {
+  & .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+  & .ant-input:hover,
+  & .ant-input-affix-wrapper:active .ant-input:not(.ant-input-disabled),
+  & .ant-input:active,
+  & .ant-input-affix-wrapper:focus .ant-input:not(.ant-input-disabled),
+  & .ant-input:focus {
     border-color: $color;
   }
 
@@ -137,4 +140,3 @@
     cursor: pointer;
   }
 }
-

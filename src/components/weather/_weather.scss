@@ -66,7 +66,7 @@
   }
 
   & .date {
-    color: #A7CFFA;
+    color: #a7cffa;
     font-size: 0.7em;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -111,13 +111,13 @@
 
   & .low-temp:before,
   & .high-temp:before {
-    font-size: 1.0em;
-    color: #A7CFFA;
+    font-size: 1em;
+    color: #a7cffa;
   }
 
   & .high-temp:before {
     content: "\2191";
-    color: #FD6565;
+    color: #fd6565;
   }
 
   & .low-temp:before {
@@ -125,15 +125,9 @@
     color: #23e0ae;
   }
 
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: 400px) {
     &__title {
-      font-size: .9em;
+      font-size: 0.9em;
     }
   }
 }
-
-
-
-
-
-

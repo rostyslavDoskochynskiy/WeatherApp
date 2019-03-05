@@ -6,10 +6,13 @@ import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import rootReducer from "../reducers";
 
-export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
+export const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(thunk))
+);
 
-export const storeConfigs = app => (<Provider store={ store }>
-        <BrowserRouter>
-            { app }
-        </BrowserRouter>
-    </Provider>);
+export const storeConfigs = app => (
+  <Provider store={store}>
+    <BrowserRouter>{app}</BrowserRouter>
+  </Provider>
+);

@@ -6,7 +6,12 @@ body {
   overflow-x: hidden;
   background-color: #edfff0; }
 
-body, div, input, h1, h2, h3 {
+body,
+div,
+input,
+h1,
+h2,
+h3 {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
@@ -91,7 +96,7 @@ table {
     width: 5px;
     height: 14px;
     border-radius: 20%;
-    background: #4CAF50; }
+    background: #4caf50; }
   .lds-spinner__items:nth-child(1) {
     transform: rotate(0deg);
     animation-delay: -1.1s; }
@@ -143,14 +148,14 @@ table {
     justify-content: center;
     align-items: center; }
   .signup__title {
-    color: #4CAF50;
+    color: #4caf50;
     margin-bottom: 30px; }
   .signup .ant-input-affix-wrapper {
     margin-bottom: 10px; }
   .signup .ant-btn {
     text-transform: uppercase;
     outline: 0;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     width: 100%;
     height: 30px;
     border: 0;
@@ -158,19 +163,21 @@ table {
     font-size: 14px;
     transition: all 0.3s ease;
     cursor: pointer; }
-  .signup .ant-btn:hover, .signup .ant-btn:active, .signup .ant-btn:focus {
-    background-color: #43A047 !important;
+  .signup .ant-btn:hover,
+  .signup .ant-btn:active,
+  .signup .ant-btn:focus {
+    background-color: #43a047 !important;
     color: #fff; }
   .signup__question, .signup__link {
     margin: 15px 0 0;
     color: #b3b3b3;
     font-size: 12px; }
   .signup__link_btn {
-    color: #4CAF50;
+    color: #4caf50;
     text-decoration: none;
     margin-left: 4px; }
     .signup__link_btn:hover {
-      color: #4CAF50; }
+      color: #4caf50; }
   .signup__modal .ant-btn:first-child {
     display: none; }
   .signup__modal .ant-btn {
@@ -181,7 +188,7 @@ table {
 .signin {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 45px;
   text-align: center;
   width: 300px;
@@ -192,14 +199,14 @@ table {
     justify-content: center;
     align-items: center; }
   .signin__title {
-    color: #4CAF50;
+    color: #4caf50;
     margin-bottom: 30px; }
   .signin .ant-input-affix-wrapper {
     margin-bottom: 15px; }
   .signin .ant-btn {
     text-transform: uppercase;
     outline: 0;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     width: 100%;
     height: 30px;
     border: 0;
@@ -207,19 +214,21 @@ table {
     font-size: 14px;
     transition: all 0.3s ease;
     cursor: pointer; }
-  .signin .ant-btn:hover, .signin .ant-btn:active, .signin .ant-btn:focus {
-    background-color: #43A047;
+  .signin .ant-btn:hover,
+  .signin .ant-btn:active,
+  .signin .ant-btn:focus {
+    background-color: #43a047;
     color: #fff; }
   .signin__question, .signin__link {
     margin: 15px 0 0;
     color: #b3b3b3;
     font-size: 12px; }
   .signin__link_btn {
-    color: #4CAF50;
+    color: #4caf50;
     text-decoration: none;
     margin-left: 4px; }
     .signin__link_btn:hover {
-      color: #4CAF50; }
+      color: #4caf50; }
 
 .header {
   height: 60px;
@@ -260,17 +269,20 @@ table {
   .header .ant-dropdown-link .header__drop {
     color: #000; }
   .header .ant-dropdown-menu-item:hover {
-    background-color: #43A047;
+    background-color: #43a047;
     color: #fff !important; }
   .header .ant-btn-primary,
-  .header .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled), .header .ant-input:hover,
-  .header .ant-input-affix-wrapper:active .ant-input:not(.ant-input-disabled), .header .ant-input:active,
-  .header .ant-input-affix-wrapper:focus .ant-input:not(.ant-input-disabled), .header .ant-input:focus {
-    border-color: #4CAF50; }
+  .header .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+  .header .ant-input:hover,
+  .header .ant-input-affix-wrapper:active .ant-input:not(.ant-input-disabled),
+  .header .ant-input:active,
+  .header .ant-input-affix-wrapper:focus .ant-input:not(.ant-input-disabled),
+  .header .ant-input:focus {
+    border-color: #4caf50; }
   .header .ant-btn-primary {
-    color: #4CAF50; }
+    color: #4caf50; }
   .header .ant-btn-primary:hover {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: #fff; }
   .header__img {
     max-width: 50px;
@@ -306,7 +318,7 @@ table {
   .header__tips-items:last-of-type {
     margin-bottom: 20px; }
   .header__tips-items:hover {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: #fff; }
   .header__action-wrapper {
     width: 20%;
@@ -377,7 +389,7 @@ table {
   .weather__table-tr:last-of-type {
     border-bottom: 1px solid rgba(167, 207, 250, 0.7); }
   .weather .date {
-    color: #A7CFFA;
+    color: #a7cffa;
     font-size: 0.7em;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -408,17 +420,17 @@ table {
     margin-left: 3px; }
   .weather .low-temp:before,
   .weather .high-temp:before {
-    font-size: 1.0em;
-    color: #A7CFFA; }
+    font-size: 1em;
+    color: #a7cffa; }
   .weather .high-temp:before {
     content: "\2191";
-    color: #FD6565; }
+    color: #fd6565; }
   .weather .low-temp:before {
     content: "\2193";
     color: #23e0ae; }
   @media screen and (max-width: 400px) {
     .weather__title {
-      font-size: .9em; } }
+      font-size: 0.9em; } }
 
 .current-location {
   margin-top: 120px; }
@@ -434,7 +446,7 @@ table {
     font-size: 15px;
     padding: 5px; }
   .current-location__data-item {
-    color: #4CAF50; }
+    color: #4caf50; }
   .current-location .weather {
     margin-top: 80px; }
   .current-location .weather__title {

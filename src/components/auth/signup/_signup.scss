@@ -36,7 +36,9 @@
     cursor: pointer;
   }
 
-  & .ant-btn:hover, & .ant-btn:active, & .ant-btn:focus {
+  & .ant-btn:hover,
+  & .ant-btn:active,
+  & .ant-btn:focus {
     background-color: $colorHover !important;
     color: #fff;
   }
@@ -70,8 +72,3 @@
     width: inherit;
   }
 }
-
-
-
-
-

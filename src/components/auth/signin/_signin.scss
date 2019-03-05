@@ -1,7 +1,7 @@
 .signin {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 45px;
   text-align: center;
   width: 300px;
@@ -36,7 +36,9 @@
     cursor: pointer;
   }
 
-  & .ant-btn:hover, & .ant-btn:active, & .ant-btn:focus {
+  & .ant-btn:hover,
+  & .ant-btn:active,
+  & .ant-btn:focus {
     background-color: $colorHover;
     color: #fff;
   }
@@ -58,4 +60,3 @@
     }
   }
 }
-
